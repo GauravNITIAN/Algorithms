@@ -31,7 +31,7 @@ int main()
    int B[n];
    for(int i=n;i>=0;i--)
    {
-        B[count[ar[i]]] = ar[i];
+        B[count[ar[i]]-1] = ar[i];
         count[ar[i]]--;
         
         
