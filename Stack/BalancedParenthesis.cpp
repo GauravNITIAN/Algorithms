@@ -26,7 +26,8 @@ st.push(s.at(i));
 
 // Checking for each parenthesis
 else if(s.at(i) == ')' )
-{    
+{  
+ //   st.empty() to check the boundary condtion whether stack is empty or if it is then st.top will give exception 
  if(!st.empty() && st.top() != '(' )
  return 0;	 
  st.pop();
